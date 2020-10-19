@@ -19,11 +19,11 @@ Where `<function_def>` is function definition, some examples are:
 - `x / y % 10`
 
 Where `<method_name>` is one of following:
-- `vanilla` for vanilla gradient decision
-- `rmsprop` for rmsprop gradient decision
-- `adam` for adam gradient decision
-- `momentum` for momentum gradient decision
-- `adagrad` for adagrad gradient decision
+- `vanilla` for vanilla gradient descent
+- `rmsprop` for rmsprop gradient descent
+- `adam` for adam gradient descent
+- `momentum` for momentum gradient descent
+- `adagrad` for adagrad gradient descent
 
 Where `<x_lbound>`, `<x_rbound>`, `<y_lbound>`, `<y_rbound>` are floating point literals.
 
