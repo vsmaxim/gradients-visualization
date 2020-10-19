@@ -1,0 +1,11 @@
+expression = (term "+" expression) / (term "-" expression) / term
+term       = (factor "*" term) / (factor "/" term) / (factor "%" term) / factor
+factor     = ("+" factor) / ("-" factor) / power
+power      = (primary "^" factor) / primary
+primary    = (atom "(" expression ")") / pars
+pars       = ("(" expression ")") / atom
+atom       = NAME / FLOATING_POINT_LITERAL / INTEGER
+
+INTEGER = ~"\d+"
+FLOATING_POINT_LITERAL = ~"[0-9]+[.][0-9]+"
+NAME = ~"[a-zA-Z]+"
